@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <title>JSON Exercise</title>
+  </head>
+  <body>
+    <div>
+      <label for="insertName">Nome:</label>
+      <input type="text" id="insertName" />
+      <div class="buttons">
+        <button id="saveButton" class="bg-success badge rounded-pill mt-3 border-1">Salva</button>
+        <button id="removeButton" class="bg-danger badge rounded-pill mt-3 border-1">Rimuovi</button>
+      </div>
+    </div>
+    <div id="savedName" class="text-primary"></div>
+    <h1 class="text-danger">It's the final countdown!</h1>
+    <p>Il valore del contatore verrà aggiornato ogni secondo.</p>
+    <p id="counterValue">0</p>
+    <script src="./script.js"></script>
+  </body>
+</html>
