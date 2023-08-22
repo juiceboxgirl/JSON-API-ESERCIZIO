@@ -26,19 +26,16 @@ removeButton.addEventListener("click", () => {
 });
 
 function updateCounter() {
-  // Avvia il contatore se non esiste già
   if (!sessionStorage.getItem("counter")) {
     sessionStorage.setItem("counter", "0");
   }
 
-  // Aggiorna il contatore ogni secondo
   setInterval(function () {
     var counter = parseInt(sessionStorage.getItem("counter"));
     counter++;
     sessionStorage.setItem("counter", counter.toString());
     document.getElementById("counterValue").textContent = counter;
-  }, 1000); // Aggiorna ogni secondo (1000 millisecondi)
+  }, 1000);
 }
 
-// Chiamata alla funzione di aggiornamento del contatore quando la pagina viene caricata
 window.onload = updateCounter;
